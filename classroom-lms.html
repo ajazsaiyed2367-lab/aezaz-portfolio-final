@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Classroom LMS — UX Case Study | Aezaz Saiyed</title>
+<meta name="description" content="A UX case study on a Classroom LMS experience: connecting teachers and students, simplifying teaching, and organizing learning across web and mobile." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- Progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Header (same as main site) -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html#top" class="logo">AEZAZ SAIYED</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#portfolio" class="nav-link">Projects</a>
+      <a href="index.html#about" class="nav-link">About Me</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="index.html#top" class="btn btn-pill">← Back to Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <div class="section-inner cs-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">UI/UX Case Study · Classroom LMS</p>
+        <h1 class="cs-h1">Your class is only<br><span class="cs-em">a click away</span></h1>
+        <p class="section-lead">A classroom-management and learning experience focused on helping teachers connect with students, manage activities, simplify teaching, and keep learning organized across web and mobile.</p>
+        <dl class="cs-meta">
+          <div><dt>Role</dt><dd>UI/UX Designer</dd></div>
+          <div><dt>Platform</dt><dd>Responsive Web + Mobile</dd></div>
+          <div><dt>Scope</dt><dd>Classroom LMS</dd></div>
+        </dl>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#final">View Final UI</a>
+          <a class="btn btn-ghost" href="#process">Explore Process</a>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="cs-browser">
+          <div class="cs-browser-top"><i></i><i></i><i></i><span>classroom · supplied reference</span></div>
+          <img src="assets/classroom-lms-reference.jpg" alt="Supplied Classroom LMS reference screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="cs-quick">
+    <div class="section-inner cs-quick-grid">
+      <div><b>01</b><span>Research</span></div>
+      <div><b>02</b><span>UX Strategy</span></div>
+      <div><b>03</b><span>UI Design</span></div>
+      <div><b>04</b><span>Responsive Experience</span></div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">01 · Overview</p><h2 class="section-title">Connecting students and teachers in one simple experience.</h2></div>
+      <div class="cs-copy">
+        <p>The supplied Classroom LMS screen presents a focused education product: a direct hero message, powerful classroom features, connection and activity tools, simplified teaching, protected data, resources, and a mobile-app CTA.</p>
+        <p>This is one complete project. The supplied screenshot is used as the primary visual reference throughout the case study and is included in the final site files.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="cs-quote">
+    <div class="section-inner">
+      <blockquote class="cs-blockquote">"Good classroom technology should make teaching simpler and student connection stronger."</blockquote>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="section-inner reveal">
+      <p class="eyebrow">02 · Research &amp; Discovery</p>
+      <h2 class="section-title">Reading the Classroom experience</h2>
+      <p class="section-lead">The reference image communicates its product story through a clear sequence of classroom features, teaching benefits, privacy, resources, and mobile access.</p>
+      <div class="cs-cards cs-cards-4">
+        <article><b>01</b><h3>View student screens</h3><p>Teachers can see student activity and maintain classroom visibility during lessons.</p></article>
+        <article><b>02</b><h3>Assignments &amp; quizzes</h3><p>Assessment tools support structured learning activities and classroom management.</p></article>
+        <article><b>03</b><h3>Automated grading</h3><p>Grading reduces repetitive work and gives teachers a simpler way to manage results.</p></article>
+        <article><b>04</b><h3>Resources &amp; mobile</h3><p>Resources and the mobile app extend the classroom experience beyond the main workspace.</p></article>
+      </div>
+      <div class="cs-source">Source used throughout this project: the Classroom LMS screenshot supplied for this case study, packaged as <b>classroom-lms-reference.jpg</b>.</div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section" id="problem">
+    <div class="section-inner reveal">
+      <p class="eyebrow">03 · Problem</p>
+      <div class="cs-two">
+        <h2 class="section-title">How might we help teachers manage a connected classroom without adding complexity?</h2>
+        <div class="cs-copy"><p>Teachers need visibility, communication, assessment, scheduling, and privacy tools while students need a clear and dependable learning environment. The product has to communicate all of this without making the experience feel heavy.</p></div>
+      </div>
+      <div class="cs-cards cs-cards-3">
+        <article><b>01</b><h3>Many classroom tasks</h3><p>Viewing students, tracking activities, assignments, quizzes, and grading all compete for attention.</p></article>
+        <article><b>02</b><h3>Teacher-student connection</h3><p>The platform needs to support real-time classroom interaction while keeping the workflow easy to understand.</p></article>
+        <article><b>03</b><h3>Privacy &amp; trust</h3><p>Secure sign-in, activity management, and student privacy are essential parts of the product story.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section cs-dark" id="process">
+    <div class="section-inner reveal">
+      <p class="eyebrow">04 · UX Process</p>
+      <h2 class="section-title">From classroom needs to a connected experience</h2>
+      <div class="cs-steps">
+        <article><span>01</span><h3>Audit</h3><p>Reviewed the supplied screenshot, feature sections, resource cards, app promotion, and footer structure.</p></article>
+        <article><span>02</span><h3>Define</h3><p>Defined the main experience goal as stronger student connection with simpler teacher workflows.</p></article>
+        <article><span>03</span><h3>Structure</h3><p>Grouped classroom visibility, assessment, connection, teaching, security, resources, and mobile access.</p></article>
+        <article><span>04</span><h3>Design</h3><p>Used the reference's friendly educational illustration style and teal-green visual language.</p></article>
+        <article><span>05</span><h3>Refine</h3><p>Focused on hierarchy, whitespace, scanability, responsive behaviour, and CTA clarity.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA -->
+  <section class="section" id="ia">
+    <div class="section-inner reveal">
+      <p class="eyebrow">05 · Information Architecture</p>
+      <h2 class="section-title">A classroom journey built around teacher needs</h2>
+      <div class="cs-flow">
+        <div><b>01</b><strong>Hero</strong><small>Classroom promise + Get started</small></div>
+        <div><b>02</b><strong>Features</strong><small>Student screens + assessment</small></div>
+        <div><b>03</b><strong>Connection</strong><small>Virtual class + activities</small></div>
+        <div><b>04</b><strong>Teaching</strong><small>Access + schedule + communication</small></div>
+        <div><b>05</b><strong>Protection</strong><small>Sign-in + privacy</small></div>
+        <div><b>06</b><strong>Resources</strong><small>Guides + web tools + app</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="section" id="principles">
+    <div class="section-inner reveal">
+      <p class="eyebrow">06 · Design Principles</p>
+      <h2 class="section-title">Four rules shaped the experience</h2>
+      <div class="cs-principles">
+        <div><b>01</b><h3>Make connection visible</h3><p>Show how the platform strengthens teacher-student interaction instead of only listing tools.</p></div>
+        <div><b>02</b><h3>Reduce teacher effort</h3><p>Highlight automation, scheduling, and simple classroom management as practical benefits.</p></div>
+        <div><b>03</b><h3>Keep privacy explicit</h3><p>Security and student privacy deserve their own clear section in the product story.</p></div>
+        <div><b>04</b><h3>Support every context</h3><p>Resources and mobile access extend the experience beyond a single classroom screen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL UI -->
+  <section class="section" id="final">
+    <div class="section-inner reveal">
+      <p class="eyebrow">07 · Final UI</p>
+      <h2 class="section-title">The Classroom LMS experience</h2>
+      <p class="section-lead">The supplied screenshot is used as the single final/reference visual for this project — there's no second alternate design included.</p>
+      <div class="cs-full-shot">
+        <div class="cs-caption"><span>Supplied Final Reference</span><b>Classroom LMS</b></div>
+        <img src="assets/classroom-lms-reference.jpg" alt="Full Classroom LMS supplied reference">
+      </div>
+    </div>
+  </section>
+
+  <!-- UI SYSTEM -->
+  <section class="section" id="system">
+    <div class="section-inner reveal">
+      <p class="eyebrow">08 · UI System</p>
+      <h2 class="section-title">Visual language from the reference</h2>
+      <div class="cs-system">
+        <div class="cs-panel">
+          <h3>Colour palette</h3>
+          <div class="cs-swatches">
+            <div><i style="background:#EAF8F5"></i><span>Mint</span><small>#EAF8F5</small></div>
+            <div><i style="background:#CDEDE7"></i><span>Soft Teal</span><small>#CDEDE7</small></div>
+            <div><i style="background:#48AD9D"></i><span>Primary</span><small>#48AD9D</small></div>
+            <div><i style="background:#9ACB4B"></i><span>Accent</span><small>#9ACB4B</small></div>
+            <div><i style="background:#202832"></i><span>Footer</span><small>#202832</small></div>
+          </div>
+        </div>
+        <div class="cs-panel">
+          <h3>Typography</h3>
+          <div class="cs-display">Classroom<br>connection</div>
+          <p>A strong editorial heading paired with a clean sans-serif system keeps educational content friendly and easy to scan.</p>
+        </div>
+        <div class="cs-panel">
+          <h3>Components</h3>
+          <button class="cs-sample-btn">Get Started</button>
+          <div class="cs-sample-card">Feature card</div>
+          <span class="cs-pill">Secure classroom</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section class="section cs-outcome" id="outcome">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">09 · Outcome</p><h2 class="section-title">A clearer story for a connected classroom.</h2></div>
+      <div class="cs-outcomes">
+        <div><b>01</b> Clearer classroom value proposition</div>
+        <div><b>02</b> Strong feature grouping around teacher needs</div>
+        <div><b>03</b> More visible student connection benefits</div>
+        <div><b>04</b> Dedicated privacy and security communication</div>
+        <div><b>05</b> Stronger resource and mobile-app discovery</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFLECTION -->
+  <section class="section" id="reflection">
+    <div class="section-inner cs-narrow reveal">
+      <p class="eyebrow">10 · Reflection</p>
+      <h2 class="section-title">What I learned</h2>
+      <p class="cs-reflection-text">The Classroom reference demonstrates how a product can communicate a large feature set through a simple vertical story. The strongest UX opportunity is not adding more information, but organizing existing information around the teacher's goals: connect, teach, track, protect, and continue learning.</p>
+      <p class="cs-reflection-text">The next step would be usability testing with teachers and students to validate whether feature benefits are immediately understandable and whether the path from classroom problem to product solution feels natural.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Aezaz Saiyed. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

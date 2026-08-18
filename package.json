@@ -1,0 +1,10 @@
+{
+  "name": "aezaz-saiyed-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aezaz Saiyed — UI/UX Designer portfolio",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}

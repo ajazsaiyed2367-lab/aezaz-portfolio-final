@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Toronto Cupcake — UI/UX Case Study | Aezaz Saiyed</title>
+<meta name="description" content="A UI/UX case study: redesigning the Toronto Cupcake landing page for stronger hierarchy, clearer product discovery and a more focused ordering path." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html#top" class="logo">AEZAZ SAIYED</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#portfolio" class="nav-link">Projects</a>
+      <a href="index.html#about" class="nav-link">About Me</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="index.html#top" class="btn btn-pill">← Back to Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="cs-hero">
+    <div class="section-inner cs-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">UI/UX Case Study · Web Redesign</p>
+        <h1 class="cs-h1">Toronto Cupcake<br><span class="cs-em">Landing Page Redesign</span></h1>
+        <p class="section-lead">A complete landing-page redesign focused on stronger visual hierarchy, easier product discovery, clearer calls-to-action, and a more memorable cupcake brand experience.</p>
+        <dl class="cs-meta">
+          <div><dt>Role</dt><dd>UI/UX Designer</dd></div>
+          <div><dt>Platform</dt><dd>Responsive Web</dd></div>
+          <div><dt>Scope</dt><dd>Landing Page</dd></div>
+        </dl>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#final">View Redesign</a>
+          <a class="btn btn-ghost" href="https://www.torontocupcake.com/index.html" target="_blank" rel="noopener">View Live Site ↗</a>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="cs-browser">
+          <div class="cs-browser-top"><i></i><i></i><i></i><span>torontocupcake.com</span></div>
+          <img src="assets/toronto-cupcake-landing.jpg" alt="Toronto Cupcake redesigned landing page">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-quick">
+    <div class="section-inner cs-quick-grid">
+      <div><b>01</b><span>Research</span></div>
+      <div><b>02</b><span>UX Strategy</span></div>
+      <div><b>03</b><span>UI Design</span></div>
+      <div><b>04</b><span>Responsive Layout</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="overview">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">01 · Overview</p><h2 class="section-title">Designing a sweeter first impression.</h2></div>
+      <div class="cs-copy">
+        <p>Toronto Cupcake's website is built around fresh cupcakes, seasonal products, celebrations, custom designs, and delivery. The existing homepage communicates a lot of information, but a landing page can work harder by establishing one clear visual story and a stronger path toward ordering.</p>
+        <p>This redesign keeps the playful personality of the brand while restructuring the experience around discovery, trust, and action.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-quote">
+    <div class="section-inner">
+      <blockquote class="cs-blockquote">"The goal was not to remove the personality of the brand — it was to make that personality easier to understand and act on."</blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <div class="section-inner reveal">
+      <p class="eyebrow">02 · Research &amp; Discovery</p>
+      <h2 class="section-title">Understanding the existing experience</h2>
+      <p class="section-lead">I reviewed the public-facing Toronto Cupcake homepage to understand its content, navigation, product offering, messaging, and ordering journey. The live site highlights fresh baking, occasions, custom designs, delivery, seasonal products, and online ordering.</p>
+      <div class="cs-cards cs-cards-4">
+        <article><b>01</b><h3>Strong personality</h3><p>Colourful imagery and cupcake-focused content give the brand an approachable, celebratory character.</p></article>
+        <article><b>02</b><h3>Many offerings</h3><p>Visitors may be shopping for everyday flavours, holidays, corporate events, birthdays, weddings, or custom orders.</p></article>
+        <article><b>03</b><h3>Multiple intents</h3><p>The homepage needs to support browsing, occasion discovery, customisation, and immediate ordering.</p></article>
+        <article><b>04</b><h3>Delivery matters</h3><p>Freshness and reliable delivery are important trust signals for an online cupcake purchase.</p></article>
+      </div>
+      <div class="cs-source">Source reviewed: <a href="https://www.torontocupcake.com/index.html" target="_blank" rel="noopener">TorontoCupcake.com</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="problem">
+    <div class="section-inner reveal">
+      <p class="eyebrow">03 · Problem</p>
+      <div class="cs-two">
+        <h2 class="section-title">How might we make the homepage simpler without losing the brand's charm?</h2>
+        <div class="cs-copy"><p>The core challenge was balancing a visually rich bakery brand with the practical needs of an ecommerce visitor: understand the offer quickly, find a relevant product, build confidence, and know what to do next.</p></div>
+      </div>
+      <div class="cs-cards cs-cards-3">
+        <article><b>01</b><h3>Competing attention</h3><p>Several messages can compete for the visitor's attention instead of creating one clear first step.</p></article>
+        <article><b>02</b><h3>Content density</h3><p>A broad product range needs stronger grouping and scanning patterns.</p></article>
+        <article><b>03</b><h3>Conversion path</h3><p>The route from discovering the brand to choosing and ordering a cupcake can be more direct.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cs-dark" id="process">
+    <div class="section-inner reveal">
+      <p class="eyebrow">04 · UX Process</p>
+      <h2 class="section-title">From audit to interface</h2>
+      <div class="cs-steps">
+        <article><span>01</span><h3>Audit</h3><p>Reviewed content, hierarchy, navigation, imagery, and calls-to-action.</p></article>
+        <article><span>02</span><h3>Define</h3><p>Defined the homepage's primary job: introduce, build desire, and guide visitors to order.</p></article>
+        <article><span>03</span><h3>Structure</h3><p>Organised products, occasions, delivery, and social proof into a clearer flow.</p></article>
+        <article><span>04</span><h3>Design</h3><p>Created a refined visual system with expressive type, cards, imagery, and stronger CTA hierarchy.</p></article>
+        <article><span>05</span><h3>Refine</h3><p>Adjusted spacing, scale, responsive behaviour, and content rhythm for a polished landing page.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ia">
+    <div class="section-inner reveal">
+      <p class="eyebrow">05 · Information Architecture</p>
+      <h2 class="section-title">A clearer homepage flow</h2>
+      <div class="cs-flow">
+        <div><b>01</b><strong>Hero</strong><small>Value proposition + Order Now</small></div>
+        <div><b>02</b><strong>Products</strong><small>Popular flavours + discovery</small></div>
+        <div><b>03</b><strong>Occasions</strong><small>Birthdays, holidays, events</small></div>
+        <div><b>04</b><strong>Delivery</strong><small>Fresh, fast, reliable</small></div>
+        <div><b>05</b><strong>Trust</strong><small>Customer feedback + footer</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="principles">
+    <div class="section-inner reveal">
+      <p class="eyebrow">06 · Design Principles</p>
+      <h2 class="section-title">Four rules shaped the redesign</h2>
+      <div class="cs-principles">
+        <div><b>01</b><h3>Clarity first</h3><p>Every section should have a purpose and a clear visual priority.</p></div>
+        <div><b>02</b><h3>Show, don't overload</h3><p>Use product photography and concise copy to communicate quickly.</p></div>
+        <div><b>03</b><h3>One primary action</h3><p>Ordering remains the strongest action while secondary paths stay quieter.</p></div>
+        <div><b>04</b><h3>Keep the personality</h3><p>Pastel colour, playful type, and cupcake imagery preserve the emotional brand character.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="final">
+    <div class="section-inner reveal">
+      <p class="eyebrow">07 · Final UI</p>
+      <h2 class="section-title">The redesigned landing page</h2>
+      <p class="section-lead">The final concept uses a soft pastel palette, large product imagery, rounded cards, expressive typography, and distinct content blocks to create a more scannable experience.</p>
+      <div class="cs-full-shot">
+        <div class="cs-caption"><span>Final Concept</span><b>Toronto Cupcake Landing Page</b></div>
+        <img src="assets/toronto-cupcake-landing.jpg" alt="Final Toronto Cupcake landing page redesign">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="system">
+    <div class="section-inner reveal">
+      <p class="eyebrow">08 · UI System</p>
+      <h2 class="section-title">Visual language</h2>
+      <div class="cs-system">
+        <div class="cs-panel">
+          <h3>Colour palette</h3>
+          <div class="cs-swatches">
+            <div><i style="background:#DDF6FB"></i><span>Sky</span><small>#DDF6FB</small></div>
+            <div><i style="background:#F6D8E8"></i><span>Blush</span><small>#F6D8E8</small></div>
+            <div><i style="background:#F7C9D8"></i><span>Strawberry</span><small>#F7C9D8</small></div>
+            <div><i style="background:#EA405C"></i><span>CTA</span><small>#EA405C</small></div>
+            <div><i style="background:#3A1820"></i><span>Cocoa</span><small>#3A1820</small></div>
+          </div>
+        </div>
+        <div class="cs-panel">
+          <h3>Typography</h3>
+          <div class="cs-display">Playful<br>headlines</div>
+          <p>Playfair Display creates personality while DM Sans keeps supporting copy clean and readable.</p>
+        </div>
+        <div class="cs-panel">
+          <h3>Components</h3>
+          <button class="cs-sample-btn">Order Now</button>
+          <div class="cs-sample-card">Cupcake product card</div>
+          <span class="cs-pill">Freshly baked</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cs-outcome" id="outcome">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">09 · Outcome</p><h2 class="section-title">A more focused and memorable first step.</h2></div>
+      <div class="cs-outcomes">
+        <div><b>01</b> Stronger first-screen hierarchy</div>
+        <div><b>02</b> Clearer product discovery</div>
+        <div><b>03</b> More visible ordering actions</div>
+        <div><b>04</b> Consistent visual system</div>
+        <div><b>05</b> Better content grouping</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reflection">
+    <div class="section-inner cs-narrow reveal">
+      <p class="eyebrow">10 · Reflection</p>
+      <h2 class="section-title">What I learned</h2>
+      <p class="cs-reflection-text">A redesign is not only about making an interface look better. The visual system needs to support the user's decision-making process. For an ecommerce homepage, imagery, headlines, cards, and CTAs should all help visitors understand what is available and what to do next.</p>
+      <p class="cs-reflection-text">The next step would be usability testing with real users to validate ordering confidence, product discovery, and task completion, followed by iteration based on observed behaviour.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Aezaz Saiyed. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

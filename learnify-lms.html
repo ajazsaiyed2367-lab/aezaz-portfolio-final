@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Learnify LMS — UX Case Study | Aezaz Saiyed</title>
+<meta name="description" content="A UX case study on the Learnify LMS landing experience: building trust, explaining features clearly, and guiding visitors toward a confident next step." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- Progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Header (same as main site) -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html#top" class="logo">AEZAZ SAIYED</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#portfolio" class="nav-link">Projects</a>
+      <a href="index.html#about" class="nav-link">About Me</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="index.html#top" class="btn btn-pill">← Back to Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <div class="section-inner cs-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">UI/UX Case Study · Learnify LMS</p>
+        <h1 class="cs-h1">Learnify LMS<br><span class="cs-em">Learning Experience</span></h1>
+        <p class="section-lead">A responsive learning-management experience designed to make online learning feel clear, trustworthy, and easy to navigate for institutions, educators, and students.</p>
+        <dl class="cs-meta">
+          <div><dt>Role</dt><dd>UI/UX Designer</dd></div>
+          <div><dt>Platform</dt><dd>Responsive Web</dd></div>
+          <div><dt>Scope</dt><dd>LMS Landing Experience</dd></div>
+        </dl>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#final">View Final UI</a>
+          <a class="btn btn-ghost" href="#process">Explore Process</a>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="cs-browser">
+          <div class="cs-browser-top"><i></i><i></i><i></i><span>learnify lms · supplied reference</span></div>
+          <img src="assets/learnify-lms-reference.jpg" alt="Supplied Learnify LMS website reference screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="cs-quick">
+    <div class="section-inner cs-quick-grid">
+      <div><b>01</b><span>Research</span></div>
+      <div><b>02</b><span>UX Strategy</span></div>
+      <div><b>03</b><span>UI Design</span></div>
+      <div><b>04</b><span>Responsive Layout</span></div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">01 · Overview</p><h2 class="section-title">Making online learning easier to understand.</h2></div>
+      <div class="cs-copy">
+        <p>The supplied Learnify LMS screen presents a complete marketing story: a hero introduction, trusted brands, achievement metrics, powerful features, testimonials, a productivity CTA, and a dark footer.</p>
+        <p>This case study uses that exact supplied design as the single project reference and translates the visible content structure into a UX case-study narrative rather than splitting it into separate projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="cs-quote">
+    <div class="section-inner">
+      <blockquote class="cs-blockquote">"The best LMS experience makes learning tools feel like support, not administration."</blockquote>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="section-inner reveal">
+      <p class="eyebrow">02 · Research &amp; Discovery</p>
+      <h2 class="section-title">Reading the supplied Learnify experience</h2>
+      <p class="section-lead">The reference image shows a clear sequence of trust, proof, product capability, social proof, and conversion. These visible sections became the foundation for the UX analysis.</p>
+      <div class="cs-cards cs-cards-4">
+        <article><b>01</b><h3>Hero &amp; trust</h3><p>The hero introduces Learnify LMS and pairs a clear "Get started" action with a human learning image.</p></article>
+        <article><b>02</b><h3>Achievements</h3><p>University, school, and student counts communicate scale and credibility before the feature details.</p></article>
+        <article><b>03</b><h3>Powerful features</h3><p>Student-screen viewing, assignments and quizzes, and automated grading explain the practical value.</p></article>
+        <article><b>04</b><h3>Social proof</h3><p>Testimonials and the final productivity CTA reinforce confidence and encourage the next step.</p></article>
+      </div>
+      <div class="cs-source">Source used throughout this project: the Learnify LMS screenshot supplied for this case study, packaged as <b>learnify-lms-reference.jpg</b>.</div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section" id="problem">
+    <div class="section-inner reveal">
+      <p class="eyebrow">03 · Problem</p>
+      <div class="cs-two">
+        <h2 class="section-title">How might we communicate a feature-rich LMS without making the experience feel complicated?</h2>
+        <div class="cs-copy"><p>An LMS can contain many capabilities while serving multiple audiences. The landing page therefore has to establish credibility quickly, explain benefits without overwhelming visitors, and maintain a clear path toward getting started.</p></div>
+      </div>
+      <div class="cs-cards cs-cards-3">
+        <article><b>01</b><h3>Feature density</h3><p>Course management, assessment, grading, and collaboration can create cognitive load when presented without hierarchy.</p></article>
+        <article><b>02</b><h3>Multiple audiences</h3><p>Institutions, teachers, and students each need to understand a different part of the platform's value.</p></article>
+        <article><b>03</b><h3>Conversion clarity</h3><p>The page needs to move naturally from credibility and features toward one confident action.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section cs-dark" id="process">
+    <div class="section-inner reveal">
+      <p class="eyebrow">04 · UX Process</p>
+      <h2 class="section-title">From feature story to focused experience</h2>
+      <div class="cs-steps">
+        <article><span>01</span><h3>Audit</h3><p>Reviewed the supplied screenshot, section order, visual hierarchy, imagery, metrics, feature blocks, testimonials, and CTA.</p></article>
+        <article><span>02</span><h3>Define</h3><p>Defined the landing-page job as establishing trust, explaining value, and encouraging action.</p></article>
+        <article><span>03</span><h3>Structure</h3><p>Grouped credibility, achievements, features, social proof, and conversion into a readable sequence.</p></article>
+        <article><span>04</span><h3>Design</h3><p>Used the screenshot's educational tone as the visual direction while refining spacing, cards, hierarchy, and responsive behaviour.</p></article>
+        <article><span>05</span><h3>Refine</h3><p>Balanced text density, image scale, CTA visibility, and mobile responsiveness.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA -->
+  <section class="section" id="ia">
+    <div class="section-inner reveal">
+      <p class="eyebrow">05 · Information Architecture</p>
+      <h2 class="section-title">A clear landing-page journey</h2>
+      <div class="cs-flow">
+        <div><b>01</b><strong>Hero</strong><small>Promise + Get started</small></div>
+        <div><b>02</b><strong>Trust</strong><small>Partners + achievements</small></div>
+        <div><b>03</b><strong>Features</strong><small>Core learning tools</small></div>
+        <div><b>04</b><strong>Social proof</strong><small>User testimonials</small></div>
+        <div><b>05</b><strong>CTA</strong><small>Ready to be productive?</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES -->
+  <section class="section" id="principles">
+    <div class="section-inner reveal">
+      <p class="eyebrow">06 · Design Principles</p>
+      <h2 class="section-title">Four rules shaped the experience</h2>
+      <div class="cs-principles">
+        <div><b>01</b><h3>Build trust early</h3><p>Credibility signals should appear before visitors reach detailed feature content.</p></div>
+        <div><b>02</b><h3>Explain through visuals</h3><p>Large learning imagery and concise copy make feature benefits easier to scan.</p></div>
+        <div><b>03</b><h3>Keep actions obvious</h3><p>The "Get started" action remains visually distinct and easy to recognize.</p></div>
+        <div><b>04</b><h3>Keep it human</h3><p>People-focused imagery, testimonials, and generous whitespace make the LMS feel approachable.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL UI -->
+  <section class="section" id="final">
+    <div class="section-inner reveal">
+      <p class="eyebrow">07 · Final UI</p>
+      <h2 class="section-title">The Learnify LMS website</h2>
+      <p class="section-lead">The supplied screenshot is presented here as the single final/reference visual for the project — no second alternate case study is included.</p>
+      <div class="cs-full-shot">
+        <div class="cs-caption"><span>Supplied Final Reference</span><b>Learnify LMS</b></div>
+        <img src="assets/learnify-lms-reference.jpg" alt="Full Learnify LMS supplied reference">
+      </div>
+    </div>
+  </section>
+
+  <!-- UI SYSTEM -->
+  <section class="section" id="system">
+    <div class="section-inner reveal">
+      <p class="eyebrow">08 · UI System</p>
+      <h2 class="section-title">Visual language from the reference</h2>
+      <div class="cs-system">
+        <div class="cs-panel">
+          <h3>Colour palette</h3>
+          <div class="cs-swatches">
+            <div><i style="background:#F4FAED"></i><span>Leaf Tint</span><small>#F4FAED</small></div>
+            <div><i style="background:#DCEBC7"></i><span>Soft Green</span><small>#DCEBC7</small></div>
+            <div><i style="background:#A6D85A"></i><span>Lime</span><small>#A6D85A</small></div>
+            <div><i style="background:#8BC34A"></i><span>CTA Green</span><small>#8BC34A</small></div>
+            <div><i style="background:#202832"></i><span>Footer Ink</span><small>#202832</small></div>
+          </div>
+        </div>
+        <div class="cs-panel">
+          <h3>Typography</h3>
+          <div class="cs-display">Learn<br>better</div>
+          <p>A high-contrast editorial heading style pairs with a clean sans-serif body system for readable product communication.</p>
+        </div>
+        <div class="cs-panel">
+          <h3>Components</h3>
+          <button class="cs-sample-btn">Get Started</button>
+          <div class="cs-sample-card">Feature card</div>
+          <span class="cs-pill">Trusted LMS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section class="section cs-outcome" id="outcome">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">09 · Outcome</p><h2 class="section-title">A focused, trustworthy LMS story.</h2></div>
+      <div class="cs-outcomes">
+        <div><b>01</b> Clearer first-screen value proposition</div>
+        <div><b>02</b> Strong credibility through partners and achievements</div>
+        <div><b>03</b> Scannable feature communication</div>
+        <div><b>04</b> Stronger social proof and CTA sequence</div>
+        <div><b>05</b> Consistent educational visual language</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFLECTION -->
+  <section class="section" id="reflection">
+    <div class="section-inner cs-narrow reveal">
+      <p class="eyebrow">10 · Reflection</p>
+      <h2 class="section-title">What I learned</h2>
+      <p class="cs-reflection-text">A strong LMS landing page needs to sell confidence before it sells features. The supplied Learnify design already contains useful proof points; the UX opportunity is to connect those proof points into a narrative that helps visitors understand why the platform matters.</p>
+      <p class="cs-reflection-text">The next step would be usability testing with educators, students, and institutional decision-makers to validate feature comprehension, trust, accessibility, and CTA effectiveness.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Aezaz Saiyed. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
