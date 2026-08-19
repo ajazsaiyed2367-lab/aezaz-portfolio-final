@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HabitFlow — PWA Case Study | Aezaz Saiyed</title>
+<meta name="description" content="A UI/UX and product-development case study: designing and building HabitFlow, an offline-first, privacy-first Progressive Web App for daily habit tracking." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html#top" class="logo">AEZAZ SAIYED</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#portfolio" class="nav-link">Projects</a>
+      <a href="index.html#about" class="nav-link">About Me</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="index.html#top" class="btn btn-pill">← Back to Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="cs-hero">
+    <div class="section-inner cs-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">PWA Case Study · Product Design &amp; Development</p>
+        <h1 class="cs-h1">HabitFlow<br><span class="cs-em">Offline-First Habit Tracker</span></h1>
+        <p class="section-lead">A privacy-first Progressive Web App built to solve habit-tracker bloat — no accounts, no subscriptions, no cloud sync. Just a fast, offline-capable daily check-in that respects the user's data.</p>
+        <dl class="cs-meta">
+          <div><dt>Role</dt><dd>UI/UX Designer &amp; Developer</dd></div>
+          <div><dt>Platform</dt><dd>Progressive Web App</dd></div>
+          <div><dt>Scope</dt><dd>Full Product, AI-Driven Development</dd></div>
+        </dl>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#final">View the App</a>
+          <a class="btn btn-ghost" href="https://habit-flow-pwa-final.vercel.app/" target="_blank" rel="noopener">View Live Site ↗</a>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="cs-browser">
+          <div class="cs-browser-top"><i></i><i></i><i></i><span>habit-flow-pwa-final.vercel.app</span></div>
+          <img src="assets/habitflow-dashboard.jpg" alt="HabitFlow dashboard showing today's habits, streaks and progress ring">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-quick">
+    <div class="section-inner cs-quick-grid">
+      <div><b>01</b><span>UX Research</span></div>
+      <div><b>02</b><span>Product Design</span></div>
+      <div><b>03</b><span>AI-Driven Build</span></div>
+      <div><b>04</b><span>PWA Engineering</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="overview">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">01 · Overview</p><h2 class="section-title">Habit tracking, stripped down to what matters.</h2></div>
+      <div class="cs-copy">
+        <p>Most habit-tracking apps ask for an account before you've even tracked your first habit — then layer in subscriptions, streak-shaming push notifications, and cloud dashboards nobody asked for. HabitFlow was designed to do the opposite: open the app, check in, done.</p>
+        <p>The entire product — from UX research through final PWA build — was created using an AI-driven development workflow, with every prompt and decision documented alongside the code.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-quote">
+    <div class="section-inner">
+      <blockquote class="cs-blockquote">"The goal wasn't to build more features — it was to prove a habit tracker only needs a handful of taps to earn its place on someone's home screen."</blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <div class="section-inner reveal">
+      <p class="eyebrow">02 · Research &amp; Discovery</p>
+      <h2 class="section-title">Understanding why habit trackers get abandoned</h2>
+      <p class="section-lead">Research centered on a primary persona — students and young professionals juggling 2–5 personal routines — and the recurring reasons they drop off existing habit apps: forced sign-ups, paywalls, and overloaded dashboards.</p>
+      <div class="cs-cards cs-cards-4">
+        <article><b>01</b><h3>Speed over features</h3><p>Daily check-ins needed to complete in under 3 seconds with a maximum of two taps.</p></article>
+        <article><b>02</b><h3>No forced accounts</h3><p>Sign-ups and cloud logins were consistently cited as reasons people abandoned similar apps.</p></article>
+        <article><b>03</b><h3>Data ownership</h3><p>Storing data on-device rather than in the cloud builds trust and removes a point of friction.</p></article>
+        <article><b>04</b><h3>Visual motivation</h3><p>Simple streaks and a monthly heatmap motivate consistency better than dense dashboards.</p></article>
+      </div>
+      <div class="cs-source">Research protocol: 5–8 participant interviews on prior habit-app abandonment, followed by 5-participant usability testing on core tasks (create, complete, view streak, export data).</div>
+    </div>
+  </section>
+
+  <section class="section" id="problem">
+    <div class="section-inner reveal">
+      <p class="eyebrow">03 · Problem</p>
+      <div class="cs-two">
+        <h2 class="section-title">How might we make daily check-ins effortless without asking anything of the user first?</h2>
+        <div class="cs-copy"><p>The challenge was designing a product that earns trust and habit-forming behaviour immediately — with zero onboarding friction, no login wall, and complete reliability even with no network connection.</p></div>
+      </div>
+      <div class="cs-cards cs-cards-3">
+        <article><b>01</b><h3>Onboarding friction</h3><p>Every extra step between opening the app and logging a habit is a reason to abandon it.</p></article>
+        <article><b>02</b><h3>Offline reliability</h3><p>A habit tracker that fails without signal defeats its own purpose — check-ins happen anywhere.</p></article>
+        <article><b>03</b><h3>Trust through privacy</h3><p>No account, no analytics, no cloud sync — data ownership needed to be a visible product decision, not a footnote.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cs-dark" id="process">
+    <div class="section-inner reveal">
+      <p class="eyebrow">04 · Development Process</p>
+      <h2 class="section-title">From research plan to installable PWA</h2>
+      <div class="cs-steps">
+        <article><span>01</span><h3>Research</h3><p>Defined persona, core hypotheses, and success metrics before any UI work began.</p></article>
+        <article><span>02</span><h3>Plan</h3><p>Scoped a strict MVP feature set and explicitly listed what the product would not include.</p></article>
+        <article><span>03</span><h3>Design</h3><p>Built the interface around a single daily view, with insights and settings kept one tap away.</p></article>
+        <article><span>04</span><h3>Build</h3><p>Implemented with vanilla HTML/CSS/JS, IndexedDB persistence, a manifest, and a service worker.</p></article>
+        <article><span>05</span><h3>Verify</h3><p>Tested installability, offline behaviour, and manifest/service-worker health in DevTools before shipping.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ia">
+    <div class="section-inner reveal">
+      <p class="eyebrow">05 · Information Architecture</p>
+      <h2 class="section-title">Three screens, one thumb</h2>
+      <div class="cs-flow">
+        <div><b>01</b><strong>Today</strong><small>Progress ring + 1-tap check-in</small></div>
+        <div><b>02</b><strong>Insights</strong><small>30-day heatmap + streaks</small></div>
+        <div><b>03</b><strong>Settings</strong><small>Theme, export/import, install</small></div>
+        <div><b>04</b><strong>Add Habit</strong><small>Name, category, frequency, color</small></div>
+        <div><b>05</b><strong>Offline banner</strong><small>Confidence when signal drops</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="principles">
+    <div class="section-inner reveal">
+      <p class="eyebrow">06 · Design Principles</p>
+      <h2 class="section-title">Four rules that shaped every decision</h2>
+      <div class="cs-principles">
+        <div><b>01</b><h3>Zero friction</h3><p>No account, no paywall, no setup — a habit can be logged within seconds of opening the app.</p></div>
+        <div><b>02</b><h3>Offline by default</h3><p>Core functionality works with no connection, backed by a service worker and IndexedDB.</p></div>
+        <div><b>03</b><h3>Privacy as a feature</h3><p>No analytics, no tracking, no cloud storage — data stays on the user's device.</p></div>
+        <div><b>04</b><h3>Small and maintainable</h3><p>Vanilla JS and standard CSS over frameworks, kept deliberately simple to extend.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="final">
+    <div class="section-inner reveal">
+      <p class="eyebrow">07 · Final Product</p>
+      <h2 class="section-title">The finished PWA</h2>
+      <p class="section-lead">The shipped product includes a Today dashboard with streaks and a progress ring, a 30-day insights heatmap, light/dark themes, JSON export/import, and full install-to-home-screen support.</p>
+      <div class="cs-full-shot">
+        <div class="cs-caption"><span>Live Product</span><b>HabitFlow — Today Dashboard (Dark Mode)</b></div>
+        <img src="assets/habitflow-dashboard-dark.jpg" alt="HabitFlow final dashboard interface in dark mode">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="system">
+    <div class="section-inner reveal">
+      <p class="eyebrow">08 · UI System</p>
+      <h2 class="section-title">Visual language</h2>
+      <div class="cs-system">
+        <div class="cs-panel">
+          <h3>Colour palette</h3>
+          <div class="cs-swatches">
+            <div><i style="background:#7c3aed"></i><span>Accent</span><small>#7c3aed</small></div>
+            <div><i style="background:#5b21b6"></i><span>Accent Deep</span><small>#5b21b6</small></div>
+            <div><i style="background:#f5f7fb"></i><span>Surface (Light)</span><small>#f5f7fb</small></div>
+            <div><i style="background:#090d16"></i><span>Surface (Dark)</span><small>#090d16</small></div>
+            <div><i style="background:#111827"></i><span>Text</span><small>#111827</small></div>
+          </div>
+        </div>
+        <div class="cs-panel">
+          <h3>Typography</h3>
+          <div class="cs-display">Clear<br>and calm</div>
+          <p>Inter carries the entire interface — legible at small sizes and neutral enough to stay out of the way of the data.</p>
+        </div>
+        <div class="cs-panel">
+          <h3>Components</h3>
+          <button class="cs-sample-btn">Mark Complete</button>
+          <div class="cs-sample-card">Habit streak card</div>
+          <span class="cs-pill">Working offline</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cs-outcome" id="outcome">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">09 · Outcome</p><h2 class="section-title">A tracker that respects the user's time and data.</h2></div>
+      <div class="cs-outcomes">
+        <div><b>01</b> Zero-friction, sub-3-second daily check-in</div>
+        <div><b>02</b> Fully functional offline via service worker caching</div>
+        <div><b>03</b> No accounts, no analytics, no cloud storage</div>
+        <div><b>04</b> Installable home-screen PWA on iOS and Android</div>
+        <div><b>05</b> Local JSON backup and restore, no server required</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reflection">
+    <div class="section-inner cs-narrow reveal">
+      <p class="eyebrow">10 · Reflection</p>
+      <h2 class="section-title">What I learned</h2>
+      <p class="cs-reflection-text">Constraint-driven design is still design. Deciding what HabitFlow would not include — accounts, cloud sync, social feeds — did as much for the product as any single screen. The hardest part wasn't the interface; it was staying disciplined about scope.</p>
+      <p class="cs-reflection-text">Working with an AI-driven development workflow also meant documenting decisions as I made them, not after the fact — which made the research plan, design principles, and final build far easier to keep honest with each other.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Aezaz Saiyed. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/ajazsaiyed1510" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.instagram.com/aezaz_ali_72" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
