@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Student Service Portal — Full-Stack Case Study | Aezaz Saiyed</title>
+<meta name="description" content="A full-stack case study on the Student Service Portal: a database-free, multi-page Node.js and Express application with server-side validation and file upload handling." />
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html#top" class="logo">AEZAZ SAIYED</a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#portfolio" class="nav-link">Projects</a>
+      <a href="index.html#about" class="nav-link">About Me</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="index.html#top" class="btn btn-pill">← Back to Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="cs-hero">
+    <div class="section-inner cs-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">Full-Stack Case Study · Student Service Portal</p>
+        <h1 class="cs-h1">Student Service<br><span class="cs-em">Portal, Server-Side</span></h1>
+        <p class="section-lead">A multi-page Node.js and Express application that lets students browse campus services, submit a request, and receive an instantly processed confirmation — no database, no client-side framework, just clean server-side logic doing real work.</p>
+        <dl class="cs-meta">
+          <div><dt>Role</dt><dd>Full-Stack Developer</dd></div>
+          <div><dt>Stack</dt><dd>Node.js · Express · EJS</dd></div>
+          <div><dt>Scope</dt><dd>WDDM130 · Project 2</dd></div>
+        </dl>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#final">View Final Build</a>
+          <a class="btn btn-ghost" href="#process">Explore the Build</a>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="cs-browser">
+          <div class="cs-browser-top"><i></i><i></i><i></i><span>student service portal · home</span></div>
+          <img src="assets/student-portal-home.png" alt="Student Service Portal home page screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-quick">
+    <div class="section-inner cs-quick-grid">
+      <div><b>01</b><span>Express + EJS</span></div>
+      <div><b>02</b><span>Server-Side Validation</span></div>
+      <div><b>03</b><span>File Upload Handling</span></div>
+      <div><b>04</b><span>Deployed on Vercel</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="overview">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">01 · Overview</p><h2 class="section-title">A front-desk errand, moved online.</h2></div>
+      <div class="cs-copy">
+        <p>The brief for WDDM130 Project 2 was to build a multi-page, server-rendered application with dynamic content, a working form, real validation, and a file upload — without reaching for a database. The result was the Student Service Portal: a small campus tool where students browse available services, submit a request, and get a genuinely processed confirmation back.</p>
+        <p>Every page is rendered by Express and EJS on the server. There's no client-side framework doing the heavy lifting — the interesting problems here were all about handling input, state, and files correctly on the backend, then presenting the result clearly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-quote">
+    <div class="section-inner">
+      <blockquote class="cs-blockquote">"Validation should feel like a checkpoint, not a wall — every failed field is a chance to guide the student back, not just an error to log."</blockquote>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    <div class="section-inner reveal">
+      <p class="eyebrow">02 · Requirements</p>
+      <h2 class="section-title">Reading the assignment brief</h2>
+      <p class="section-lead">Four requirements shaped every decision in the build: real page structure, dynamic content, a genuinely validated form, and a file upload that had to survive a serverless host.</p>
+      <div class="cs-cards cs-cards-4">
+        <article><b>01</b><h3>Multi-page structure</h3><p>Home, About, Service Request, and a Confirmation page, all sharing one header/footer layout through EJS partials.</p></article>
+        <article><b>02</b><h3>Dynamic content</h3><p>The three services and their fees and response times live in one array and are looped into both the home page and the request form.</p></article>
+        <article><b>03</b><h3>Form + validation</h3><p>Nine fields validated server-side with express-validator, including a custom regex for the student ID format.</p></article>
+        <article><b>04</b><h3>File upload</h3><p>A required student card image, checked by MIME type and shown back to the student without ever touching disk.</p></article>
+      </div>
+      <div class="cs-source">Source: WDDM130 Project 2 brief — a database-free, multi-page Node.js/Express application with dynamic content, form processing, and file handling.</div>
+    </div>
+  </section>
+
+  <section class="section" id="problem">
+    <div class="section-inner reveal">
+      <p class="eyebrow">03 · Problem</p>
+      <div class="cs-two">
+        <h2 class="section-title">How do you prove real server-side processing with no database to lean on?</h2>
+        <div class="cs-copy"><p>Without persistent storage, every submission still had to look and feel processed — a request number, a matched service, an estimated response time — all generated fresh on each request, then handed straight back to the student with nothing saved.</p></div>
+      </div>
+      <div class="cs-cards cs-cards-3">
+        <article><b>01</b><h3>State without storage</h3><p>Request numbers, fees, and summaries all had to be derived at request time instead of looked up from a record.</p></article>
+        <article><b>02</b><h3>Uploads on a serverless host</h3><p>Vercel doesn't guarantee persistent disk between requests, so a saved-file-plus-link approach wasn't an option.</p></article>
+        <article><b>03</b><h3>Useful errors, not dead ends</h3><p>Failing a nine-field form shouldn't mean the student has to retype everything from a blank page.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cs-dark" id="process">
+    <div class="section-inner reveal">
+      <p class="eyebrow">04 · Build Process</p>
+      <h2 class="section-title">From route map to shipped app</h2>
+      <div class="cs-steps">
+        <article><span>01</span><h3>Plan</h3><p>Mapped the four routes and what data each page needed before writing a single template.</p></article>
+        <article><span>02</span><h3>Structure views</h3><p>Built EJS partials for the header and footer, then home, about, request, result, and 404 templates on top.</p></article>
+        <article><span>03</span><h3>Wire the backend</h3><p>Express routes, an express-validator rule chain per field, and the POST handler's processing logic.</p></article>
+        <article><span>04</span><h3>Handle uploads</h3><p>Configured express-fileupload, checked MIME types, and converted images to base64 data URIs in memory.</p></article>
+        <article><span>05</span><h3>Deploy</h3><p>Configured vercel.json and shipped the app to Vercel as a serverless Node function.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="ia">
+    <div class="section-inner reveal">
+      <p class="eyebrow">05 · Route Map</p>
+      <h2 class="section-title">A short, deliberate request flow</h2>
+      <div class="cs-flow">
+        <div><b>01</b><strong>Home</strong><small>GET / · browse services</small></div>
+        <div><b>02</b><strong>About</strong><small>GET /about · how it works</small></div>
+        <div><b>03</b><strong>Request</strong><small>GET /request · empty form</small></div>
+        <div><b>04</b><strong>Validate</strong><small>POST /request · 9 fields + file</small></div>
+        <div><b>05</b><strong>Confirm</strong><small>Rendered result · request #</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="principles">
+    <div class="section-inner reveal">
+      <p class="eyebrow">06 · Build Principles</p>
+      <h2 class="section-title">Four rules shaped the backend</h2>
+      <div class="cs-principles">
+        <div><b>01</b><h3>Validate everything server-side</h3><p>Trust nothing from the client — express-validator runs before any business logic touches the request.</p></div>
+        <div><b>02</b><h3>Never lose user input</h3><p>Failed submissions re-render the form with oldInput, so nothing needs to be retyped from scratch.</p></div>
+        <div><b>03</b><h3>No database, no problem</h3><p>Services, request numbers, and summaries are all derived fresh at request time, not stored anywhere.</p></div>
+        <div><b>04</b><h3>Serverless-safe uploads</h3><p>Image data stays in memory and becomes a base64 data URI, so it survives on Vercel's stateless functions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="final">
+    <div class="section-inner reveal">
+      <p class="eyebrow">07 · Final Build</p>
+      <h2 class="section-title">The Student Service Portal, in use</h2>
+      <p class="section-lead">Three moments from the live app: browsing services on the home page, a form catching a missing field before it ever reaches the server logic, and a confirmation page built entirely from that request.</p>
+
+      <div class="cs-full-shot">
+        <div class="cs-caption"><span>Home</span><b>Browsing available services</b></div>
+        <img src="assets/student-portal-home.png" alt="Home page listing the three available student services">
+      </div>
+
+      <div class="cs-full-shot" style="margin-top:22px;">
+        <div class="cs-caption"><span>Service Request</span><b>Inline validation on every field</b></div>
+        <img src="assets/student-portal-validation.png" alt="Service request form showing per-field validation error messages">
+      </div>
+
+      <div class="cs-full-shot" style="margin-top:22px;">
+        <div class="cs-caption"><span>Confirmation</span><b>Request processed and summarized</b></div>
+        <img src="assets/student-portal-result.png" alt="Confirmation page showing the generated request number, processed details, and uploaded student card">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="system">
+    <div class="section-inner reveal">
+      <p class="eyebrow">08 · Under the Hood</p>
+      <h2 class="section-title">How a submission gets processed</h2>
+      <div class="cs-system">
+        <div class="cs-panel">
+          <h3>Tech stack</h3>
+          <div class="cs-stack-grid">
+            <span>Node.js</span>
+            <span>Express 5</span>
+            <span>EJS</span>
+            <span>express-validator</span>
+            <span>express-fileupload</span>
+            <span>Vercel</span>
+          </div>
+        </div>
+        <div class="cs-panel">
+          <h3>Student ID validation</h3>
+          <pre class="cs-code"><span class="tok-cm">// must match XXX-XXX-XXXX, digits only</span>
+<span class="tok-kw">body</span>(<span class="tok-str">'studentId'</span>)
+  .trim().notEmpty()
+  .matches(<span class="tok-str">/^\d{3}-\d{3}-\d{4}$/</span>)
+  .withMessage(<span class="tok-str">'Invalid format.'</span>);</pre>
+        </div>
+        <div class="cs-panel">
+          <h3>Routes</h3>
+          <div class="cs-routes">
+            <div><b>GET /</b><span>Home + service list</span></div>
+            <div><b>GET /about</b><span>How it works</span></div>
+            <div><b>GET /request</b><span>Empty form</span></div>
+            <div><b>POST /request</b><span>Validate + process</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cs-outcome" id="outcome">
+    <div class="section-inner cs-two reveal">
+      <div><p class="eyebrow">09 · Outcome</p><h2 class="section-title">A small app that does real backend work.</h2></div>
+      <div class="cs-outcomes">
+        <div><b>01</b> Four server-rendered pages sharing one EJS layout system</div>
+        <div><b>02</b> A nine-field form validated end-to-end with per-field error messages</div>
+        <div><b>03</b> File uploads handled safely with zero disk dependency</div>
+        <div><b>04</b> A confirmation page that feels genuinely processed, not just echoed back</div>
+        <div><b>05</b> Deployed live on Vercel as a serverless Node app</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reflection">
+    <div class="section-inner cs-narrow reveal">
+      <p class="eyebrow">10 · Reflection</p>
+      <h2 class="section-title">What I learned</h2>
+      <p class="cs-reflection-text">Building without a database forced a different kind of discipline: every piece of "processed" data — the request number, the matched service, the summary message — had to be computed correctly in a single pass through the request handler. That constraint made the validation and processing logic in app.js the real heart of the project, not the templates.</p>
+      <p class="cs-reflection-text">The next step would be adding a lightweight persistence layer (something like a hosted Postgres or MongoDB instance) so requests could be looked up later, plus automated tests around the validation rules and an email confirmation step for a more complete service loop.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Aezaz Saiyed. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
